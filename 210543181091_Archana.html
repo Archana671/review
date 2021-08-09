@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+   #light{
+       color: white;
+       background-color: #C2FFD9;
+   }
+   #dark{
+       background-color: seagreen;
+   }
+  
+ 
+</style>
+</head>
+<body>
+    <div class="container" >
+        <div class="row mt-5 " id="light">
+            <div class="card-fluid border border-dark rounded col-3 p-0" id="card1">
+                    <div class="card-body">
+                        <div class="text-center mt-0"><input type="checkbox" onclick="product(1)"  id="check1" /></div>
+                            <img class="card-img" src="https://th.bing.com/th?id=OPA.KXwgx3ealJ60wg474C474&w=300&h=300&o=5&pid=21.1">
+                        <div class="card-body"><font color="black"></font>
+                            <span>Name: </span> <span id="name1"><b><font color="Black">Bag</font></b></span><br>
+                            <span><font color="red">Desciption: 
+                                Product details
+                               Ladies will enjoy using this Leather Shoulder Bag while they are outdoors.</font>
+                            </span> desc<br>
+                            <span>Price: </span><span id="p1">500 </span><br>
+                        <div class="row">
+                            <div class="col-2"><span>Qty:</span></div>
+                            <div class="col-6"><input value="1" id="q1" class="form-control"  type="text"></div>
+                        </div>                         
+                   </div>
+                </div>
+                
+            </div>
+            <div class="card-fluid border border-dark rounded col-3 p-0" id="card2">
+                <div class="card-body">
+                    <div class="text-center mt-0"><input type="checkbox" onclick="product(2)"  id="check2" /></div>
+                        <img class="card-img" src="https://th.bing.com/th?id=OPA.n13MqUrz4WG8qw474C474&w=300&h=300&o=5&pid=21.1">
+                    <div class="card-body">
+                        <span>Name: </span> <span id="name2"></span><font color="Black">Watch</font></span><br>
+                        <span><font color="red">Desciption: Watches for Women Waterproof Are you a woman whos looking with a perfect sense for a wristwatch? Behold! The search is now over.</font><br>
+                        <span>Price: </span><span id="p2">1000</span><br>
+                    <div class="row">
+                        <div class="col-2"><span>Qty:</span></div>
+                        <div class="col-6"><input value="1" id="q2" class="form-control"  type="text"></div>
+                    </div>                         
+               </div>
+            </div>
+        </div>
+        <div class="card-fluid border border-dark rounded col-3 p-0" id="card3">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(3)"  id="check3" /></div>
+                    <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61SNCfHtikL._SL1400_.jpg">
+                <div class="card-body">
+                    <span>Name: </span> <span id="name3"><font color="Black">Lipstik</font></span><br>
+                    <span><font color="red">Desciption: Lasts upto 12 Hrs without Smudge
+                        Ultra Matte Liquid Lipstick
+                        Transferproof and Waterproof
+                        High Pigmentation with Bold Finish
+                        Enriched with Vitamin E</font></span><br>
+                    <span>Price: </span><span id="p3">1000</span><br>
+                <div class="row">
+                    <div class="col-2"><span>Qty:</span></div>
+                    <div class="col-6"><input value="1" id="q3" class="form-control"  type="text"></div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card4">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(4)"  id="check4" /></div>
+                <img class="card-img" src="https://th.bing.com/th?id=OPA.cZ3reWX5%2bJ1h8Q474C474&w=300&h=300&o=5&pid=21.1">
+            <div class="card-body">
+                <span>Name: </span> <span id="name4"><font color="Black">Eyeliner</font></span><br>
+                <span><font color="red">Desciption: Color:Black | Size:Pack Of 1Live for super-sharp wing inspo? Don't just "like" all your faves, draw 'em yourself using Epic Ink Liner.</font></span><br>
+                <span>Price: </span><span id="p4">1000</span><br>
+            <div class="row">
+                <div class="col-2"><span>Qty:</span></div>
+                <div class="col-6"><input value="1" id="q4" class="form-control"  type="text"></div>
+            </div>                         
+       </div>
+    </div>
+</div>        
+</div>
+<div class="row mt-5 " id="dark">
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card5">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(5)"  id="check5" /></div>
+                    <img class="card-img" src="https://assets.ajio.com/medias/sys_master/root/haa/hb9/13816792743966/-473Wx593H-460447419-multi-OUTFIT.jpg">
+                <div class="card-body">
+                    <span>Name: </span><span id="name5"><font color="black">HairePins</font></span><br>
+                    <span><font color="red">Desciption: Avoid contact with water & perfume
+                        3-month warranty against manufacturing defects</font></span><br>
+                    <span>Price: </span><span id="p5">1000</span><br>
+                <div class="row">
+                    <div class="col-2"><span>Qty:</span></div>
+                    <div class="col-6"><input value="1" id="q5" class="form-control"  type="text"></div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card6">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(6)"  id="check6" /></div>
+                <img class="card-img" src="https://th.bing.com/th?id=OPA.BunAMRGwiDcNNg474C474&w=300&h=300&o=5&pid=21.1">
+            <div class="card-body">
+                <span>Name: </span> <span id="name6"><font color="black">Ring</font></span><br>
+                <span><font color="red">Desciption: Avoid contact with water & perfume
+                    Brass</font></span><br>
+                <span>Price: </span><span id="p6">500</span><br>
+            <div class="row">
+                <div class="col-2"><span>Qty:</span></div>
+                <div class="col-6"><input value="1" id="q6" class="form-control"  type="text"></div>
+            </div>                         
+       </div>
+    </div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card7">
+    <div class="card-body">
+        <div class="text-center mt-0"><input type="checkbox" onclick="product(7)"  id="check7" /></div>
+            <img class="card-img" src="https://th.bing.com/th?id=OPA.c2Z6y7jlpszmgw474C474&w=300&h=300&o=5&pid=21.1">
+        <div class="card-body">
+            <span>Name: </span> <span id="name7"><font color="black">Shooes</font></span><br>
+            <span></span><font color="red">Desciption:Black, Pointed-Toe Chunky Heeled Shoes Heels perfect for Casual occasion.</font> </span><br>
+            <span>Price: </span><span id="p7">500</span><br>
+        <div class="row">
+            <div class="col-2"><span>Qty:</span></div>
+            <div class="col-6"><input value="1" id="q7" class="form-control"  type="text"></div>
+        </div>                         
+   </div>
+</div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card8">
+<div class="card-body">
+    <div class="text-center mt-0"><input type="checkbox" onclick="product(8)"  id="check8" /></div>
+        <img class="card-img" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2484852/2018/3/12/11520857875820-The-Face-Shop-Women-Eyeshadow-2241520857875774-1.jpg">
+    <div class="card-body">
+        <span>Name: </span> <span id="name8"></span><font color="Balck">Purple Nuance</font></span><br>
+        <span><font color="red">Desciption:riple Eyes by Face Shop is a single triple kit that offers a complete eye makeup solution.</font> </span><br>
+        <span>Price: </span><span id="p8">1000</span><br>
+    <div class="row">
+        <div class="col-2"><span>Qty:</span></div>
+        <div class="col-6"><input value="1" id="q8" class="form-control"  type="text"></div>
+    </div>                         
+</div>
+</div>
+</div>        
+</div>
+<div class="row mt-5 " id="light">
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card9">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(9)"  id="check9" /></div>
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0276/1827/9477/products/41E6J616E1L_fb48a595-4040-4701-976e-9d7eae4ac0fc_500x.jpg?v=1606719991">
+                <div class="card-body">
+                    <span>Name: </span> <span id="name9"><font color="black">perfume</font></span><br>
+                    <span><font color="red">Desciption:Based on popularity of Bright Crystal edition, Versace and Euroitalia are launching a stronger version of the original fragrance with hope that it will thrill fans of the original edition</font> </span><br>
+                    <span>Price: </span><span id="p9">1000</span><br>
+                <div class="row">
+                    <div class="col-2"><span>Qty:</span></div>
+                    <div class="col-6"><input value="1" id="q9" class="form-control"  type="text"></div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card10">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(10)"  id="check10" /></div>
+                <img class="card-img" src="https://assets.ajio.com/medias/sys_master/root/20210209/UpoR/602206c17cdb8c1f1439e39e/-473Wx593H-461954712-gold-MODEL3.jpg">
+            <div class="card-body">
+                <span>Name: </span> <span id="name10"></span><font color="black">Bangles</font></span><br>
+                <span><font color="red">Desciption: Product color may slightly vary due to photographic lighting sources or your monitor settings.</font></span><br>
+                <span>Price: </span><span id="p10">1000</span><br>
+            <div class="row">
+                <div class="col-2"><span>Qty:</span></div>
+                <div class="col-6"><input value="1" id="q10" class="form-control"  type="text"></div>
+            </div>                         
+       </div>
+    </div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card11">
+    <div class="card-body">
+        <div class="text-center mt-0"><input type="checkbox" onclick="product(11)"  id="check11" /></div>
+            <img class="card-img" src="https://th.bing.com/th?id=OPA.MZmFE4dppu%2b%2fcg474C474&w=300&h=300&o=5&pid=21.1">
+        <div class="card-body">
+            <span>Name: </span> <span id="name11"></span><font color="balck">Earrings</font></span><br>
+            <span><font color="red">Desciption: Pink, Beaded Stud Earrings Feminine Earrings perfect for any occasion</font></span><br>
+            <span>Price: </span><span id="p11">1000</span><br>
+        <div class="row">
+            <div class="col-2"><span>Qty:</span></div>
+            <div class="col-6"><input value="1" id="q11" class="form-control"  type="text"></div>
+        </div>                         
+   </div>
+</div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card12">
+<div class="card-body">
+    <div class="text-center mt-0"><input type="checkbox" onclick="product(12)"  id="check12" /></div>
+        <img class="card-img" src="https://th.bing.com/th?id=OPA.ir4DYzSyOZy73A474C474&w=300&h=300&o=5&pid=21.1">
+    <div class="card-body">
+        <span>Name: </span> <span id="name12"><font color="balck">Kurta</font></span><br>
+        <span><font color="red">Desciption:White, Ikat Pattern A-line Kurta Kurtas & Kurtis perfect for Casual occasion.</font> </span> desc<br>
+        <span>Price: </span><span id="p12">1000</span><br>
+    <div class="row">
+        <div class="col-2"><span>Qty:</span></div>
+        <div class="col-6"><input value="1" id="q12" class="form-control"  type="text"></div>
+    </div>                         
+</div>
+</div>
+</div>        
+</div>
+<div class="row mt-5 " id="dark">
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card13">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(13)"  id="check13" /></div>
+                    <img class="card-img" src="https://th.bing.com/th?id=OPA.iYDYghc0CDRlIg474C474&w=300&h=300&o=5&pid=21.1">
+                <div class="card-body">
+                    <span>Name: </span> <span id="name13"><font color="black">HaireClip</font></span><br>
+                    <span><font color="red">Desciption: Hair Claw Pearl Ladies Accessories Use this pretty pearl design hair claw to hold your hair.</font> </span><br>
+                    <span>Price: </span><span id="p13">1400</span><br>
+                <div class="row">
+                    <div class="col-2"><span>Qty:</span></div>
+                    <div class="col-6"><input value="1" id="q13" class="form-control"  type="text"></div>
+                </div>                         
+           </div>
+        </div>
+    </div>
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card14">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(14)"  id="check14" /></div>
+                <img class="card-img" src="https://th.bing.com/th?id=OPA.Q%2bFTdpkp0JyYVQ474C474&w=300&h=300&o=5&pid=21.1">
+            <div class="card-body">
+                <span>Name: </span><span id="name14"><font color="black"Scrunchie></font></span><br>
+                <span><font color="red">Desciption: Width:12cm Weight:10g Style:Classic,Fashion Occasions:Date,Party,School,Office</font></span><br>
+                <span>Price: </span><span id="p14">1600</span><br>
+            <div class="row">
+                <div class="col-2"><span>Qty:</span></div>
+                <div class="col-6"><input value="1" id="q14" class="form-control"  type="text"></div>
+            </div>                         
+       </div>
+    </div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card15">
+    <div class="card-body">
+        <div class="text-center mt-0"><input type="checkbox" onclick="product(15)"  id="check15" /></div>
+            <img class="card-img" src="https://cdn.shopify.com/s/files/1/0276/1827/9477/products/71j5f4hDHBL_500x.jpg?v=1608722951">
+        <div class="card-body">
+            <span>Name: </span> <span id="name15"><font color="black">MakeupKit</font></span><br>
+            <span><font color="red">Desciption:Color:REDThis holiday exclusive works perfectly for makeup novices</font> </span><br>
+            <span>Price: </span><span id="p15">650</span><br>
+        <div class="row">
+            <div class="col-2"><span>Qty:</span></div>
+            <div class="col-6"><input value="1" id="q15" class="form-control"  type="text"></div>
+        </div>                         
+   </div>
+</div>
+</div>
+<div class="card-fluid border border-dark rounded col-3 p-0" id="card16">
+<div class="card-body">
+    <div class="text-center mt-0"><input type="checkbox" onclick="product(16)"  id="check16" /></div>
+        <img class="card-img" src="https://th.bing.com/th?id=OPA.lnpoOzai40YZXw474C474&w=300&h=300&o=5&pid=21.1">
+    <div class="card-body">
+        <span>Name: </span> <span id="name16"><font color="black">Jwellary</font>/span><br>
+        <span><font color="red">Desciption: Red, Pearl Ethnic Jewellery Set Jewellery Sets perfect for Occasion occasion.</font></span><br>
+        <span>Price: </span><span id="p16">600</span><br>
+    <div class="row">
+        <div class="col-2"><span>Qty:</span></div>
+        <div class="col-6"><input value="1" id="q16" class="form-control"  type="text"></div>
+    </div>                         
+</div>
+</div>
+</div>        
+</div>
+
+
+<br>
+<h4>Ordered Item</h4>
+<div class="row">
+    <div class="col-12">
+        <table id="tab" class="">
+
+        </table>
+    </div>
+    
+    <br>
+</div>
+<hr>
+<button type="button" class="btn btn-primary" onclick="totalSum()">Display Total Amount for Shopping</button><br><br><br><br><br>
+    </div>
+    <script>
+
+var sum=0;
+var count=0;
+
+        function product(a){
+    var c = document.getElementById('check'+a)
+    if (c.checked) {
+
+       document.getElementById('q'+a) .disabled=true
+        
+	   document.getElementById('card'+a).style.backgroundColor='#F4D160'
+       var ele=document.createElement("tr")
+       ele.id="row"+a
+       document.getElementById('tab').appendChild(ele)
+
+       var el=document.createElement('td')
+       el.id=a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="item"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="price"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="quantity"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="total"+a
+       document.getElementById('row'+a).appendChild(el)
+      
+     var name = document.getElementById("name"+a)
+     var price =document.getElementById("p"+a)
+     var qt = document.getElementById("q"+a).value
+     var pr=parseInt(price.textContent)*qt
+        sum+=pr
+     count++
+     document.getElementById(a).innerHTML=count+'.&emsp;'
+     document.getElementById("item"+a).innerHTML=name.textContent+'&emsp;'
+     document.getElementById("price"+a).innerHTML=price.textContent+'&emsp;'
+     document.getElementById("quantity"+a).innerHTML=qt+'&emsp;'
+     document.getElementById('total'+a).innerHTML=pr+"&emsp;"
+
+    }else{
+        count--
+        var price =document.getElementById("p"+a)
+        var qt = document.getElementById("q"+a).value
+        var pr=parseInt(price.textContent)*qt
+        sum-=pr
+        document.getElementById('q'+a) .disabled=false
+        document.getElementById(a).innerHTML=count+'.&emsp;'
+    document.getElementById('tab').removeChild(document.getElementById('row'+a))
+        if (1<=a&&a<=4||9<=a&&a<=12) {
+            document.getElementById('card'+a).style.backgroundColor='#C2FFD9'
+          
+        } else if (5<=a&&a<=8||13<=a&&a<=16) {
+                document.getElementById('card'+a).style.backgroundColor='#seagreen'
+               
+            }
+    }
+}
+function totalSum(){
+alert("Total sum: "+sum)
+}
+
+    </script>
+</body>
+</html>
